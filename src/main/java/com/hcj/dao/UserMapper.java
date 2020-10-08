@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface UserMapper {
-
     //增加一本书
     public int addBook(Books books);
 
@@ -21,5 +20,4 @@ public interface UserMapper {
 
     //查询所有书
     public List<Books> queryAllBook();
-
 }

@@ -6,8 +6,8 @@
 <mapper namespace="com.hcj.dao.UserMapper">
 
     <insert id="addBook" parameterType="books">
-        insert into ssmbuild.books (bookID, bookName, bookCounts, detail)
-        values (#{bookID}, #{bookName}, #{bookCounts}, #{detail});
+        insert into ssmbuild.books (bookName, bookCounts, detail)
+        values (#{bookName}, #{bookCounts}, #{detail});
     </insert>
 
     <delete id="deleteBookById" parameterType="_int">
@@ -34,7 +34,4 @@
         select *
         from ssmbuild.books;
     </select>
-
-
-
 </mapper>
